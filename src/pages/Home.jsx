@@ -2,6 +2,7 @@ import AppDownload from '@/components/home/AppDownload'
 import Faqs from '@/components/home/Faqs'
 import Hero from '@/components/home/Hero'
 import LocationWeServe from '@/components/home/LocationWeServe'
+import SecondSection from '@/components/home/SecondSection'
 import StudentTeacher from '@/components/home/StudentTeacher'
 import Testimonial from '@/components/home/Testimonial'
 import TopServices from '@/components/home/TopServices'
@@ -10,15 +11,19 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className='max-width manrope'>
+    <div className='max-width manrope space-y-30'>
+      <div className='space-y-14'>
+
         <Hero />
-        <WhyChooseUs />
-        <TopServices />
-        <StudentTeacher />
-        <LocationWeServe />
-        <Testimonial />
-        <Faqs />
-        <AppDownload />
+        <SecondSection />
+      </div>
+      <WhyChooseUs />
+      <TopServices />
+      <StudentTeacher />
+      <LocationWeServe />
+      <Testimonial />
+      <Faqs />
+      <AppDownload />
     </div>
   )
 }
