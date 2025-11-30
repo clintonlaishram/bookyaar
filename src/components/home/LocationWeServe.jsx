@@ -25,22 +25,22 @@ const data = [
     src: "./home/bengaluru.jpg",
   },
   {
-    category: "Delhi",
+    category: "Hyderabad",
     title: "",
     src: "./home/delhi.jpg", 
   },
   {
-    category: "Mumbai",
+    category: "Kolkata",
     title: "",
     src: "./home/mumbai.jpg",
   },
   {
-    category: "Chennai",
+    category: "Pune",
     title: "",
     src: "./home/chennai.jpg",
   },
   {
-    category: "Bengaluru",
+    category: "Ahmedabad",
     title: "",
     src: "./home/bengaluru.jpg",
   },

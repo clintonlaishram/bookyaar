@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '../ui/button'
 import { ArrowUpRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const rowVariantsLeft = {
   hidden: { opacity: 0, x: -40 },
@@ -27,6 +28,8 @@ const imageHover = {
 }
 
 function StudentTeacher() {
+  const navigate = useNavigate();
+
   return (
     <div className='w-full px-20 py-10 flex flex-col justify-center items-center gap-30'>
 
@@ -174,8 +177,9 @@ function StudentTeacher() {
             <Button
               variant="outline"
               className="w-fit text-lg rounded-full !px-8 !py-7 mt-4"
+              onClick={() => navigate("/tutor-register")}
             >
-              Request a Tutor <ArrowUpRight className='!w-5 !h-5' />
+              Become a Tutor <ArrowUpRight className='!w-5 !h-5' />
             </Button>
           </motion.div>
         </div>

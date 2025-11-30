@@ -19,23 +19,16 @@ function Footer() {
     return (
         <footer className="max-width">
             {/* Background image */}
-            <motion.img
+            <img
                 src="./footer.png"
                 alt="footer"
                 className="w-full"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                viewport={{ once: true }}
             />
 
             {/* Main footer content */}
-            <motion.div
+            <div
                 className="px-20 py-10 bg-color-50 h-110 flex flex-row justify-start items-center gap-10"
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.3 }}
+                
             >
                 {/* Left section */}
                 <motion.div
@@ -234,7 +227,7 @@ function Footer() {
                         </div>
                     </motion.div>
                 </motion.div>
-            </motion.div>
+            </div>
 
             {/* Bottom bar */}
             <div className="px-20 pb-10 w-full bg-color-50 space-y-4">
